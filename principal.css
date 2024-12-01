@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+
+/* Mi Perfil */
+.perfil-section {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /*horizontal, vertical, difuminado, color */
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.perfil-section:hover {
+    transform: translateX(-10px);
+}
+
+.perfil-section .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.perfil-section .btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.perfil-section .btn:hover {
+    background-color: #feb47b;
+}
+
+/* Chats */
+.chats-section {
+    background-color: #ffebcd;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.chats-section:hover {
+    transform: translateX(-10px);
+}
+
+.chats-section .chats-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.chats-section h3 {
+    font-size: 20px;
+    color: #ff6f61;
+}
+
+.chats-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.chats-section .btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.chats-section .btn:hover {
+    background-color: #feb47b;
+}
+
+/* Blog */
+.blog-section {
+    background-color: #e0f7fa;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.blog-section:hover {
+    transform: translateX(-10px);
+}
+
+.blog-section .blog-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.blog-section h3 {
+    font-size: 20px;
+    color: #00838f;
+}
+
+.blog-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.blog-section .btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.blog-section .btn:hover {
+    background-color: #feb47b;
+}
+
+/* Coincidencias */
+.coincidencias-section {
+    background-color: #d1c4e9;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.coincidencias-section:hover {
+    transform: translateX(-10px);
+}
+
+.coincidencias-section .coincidencias-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.coincidencias-section h3 {
+    font-size: 20px;
+    color: #6a1b9a;
+}
+
+.coincidencias-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.coincidencias-section .btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.coincidencias-section .btn:hover {
+    background-color: #feb47b;
+}
+
+/* Eventos */
+.eventos-section {
+    background-color: #fff3e0;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.eventos-section:hover {
+    transform: translateX(-10px);
+}
+
+.eventos-section .eventos-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.eventos-section h3 {
+    font-size: 20px;
+    color: #ff5722;
+}
+
+.eventos-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.eventos-section .btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.eventos-section .btn:hover {
+    background-color: #feb47b;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff6f61;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+
+
