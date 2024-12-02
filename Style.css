@@ -7,7 +7,7 @@ body, h1, p, a {
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: linear-gradient(to right, #f7a692, #e77ca5);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ body {
 
 header {
   padding: 20px;
-  background: #ff6f61;
+  background: linear-gradient(to right, #f57859, #c71b5d);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -80,6 +80,6 @@ header h1 {
 }
 footer {
   padding: 10px;
-  background: #ff6f61;
+  background: #22201f;
   font-size: 0.9rem;
 }
