@@ -131,3 +131,19 @@ footer {
     text-align: center;
     margin-top: auto;  
 }
+
+.text-container ul {
+    list-style-position: inside;
+    text-align: justify;
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.like{
+    color: rgb(43, 167, 43);
+}
+
+.reject{
+    color: red
+}
