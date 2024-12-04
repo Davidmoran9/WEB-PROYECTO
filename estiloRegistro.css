@@ -29,7 +29,7 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border: 2px solid #ff6f61;
@@ -58,4 +58,19 @@ button.boton {
 
 .contenedor-registro a:hover {
     color: #ff9a9e;
+}
+
+.boton{
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(to right, #ff6f61, #ff9a9e);
+    color: #fff;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    width: auto;
 }

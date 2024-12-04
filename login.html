@@ -13,15 +13,16 @@
      
         <div class="formulario">
             <h2>Iniciar Sesión</h2>
-            <form action="plataformas.html" method="get">
+            <form action="principal.html" method="get">
                 <div class="center">
                     <img src="Logo.webp" alt="Usuario" class="perfil-redondo" width="150" height="150">
                 </div>
                 <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario" name="usuario" required>
+                <input type="text" id="usuario" name="usuario" placeholder="Usuario" minlength="3" required>
                 <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contraseña" name="contraseña" required>
-                <a href="principal.html" class="boton">Ingresar</a>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" minlength="4" required>
+                <input class="iniciarSesion" type="submit" value="Ingresar">
+                <!-- <a href="principal.html" class="boton">Ingresar</a> -->
             </form>
         </div>
 

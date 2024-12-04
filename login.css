@@ -14,6 +14,7 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
+    height: 100%;
 }
 
 .contenedor-login {
@@ -70,7 +71,7 @@ input:focus {
     border: 2px solid #ff9a9e;
 }
 
-.boton {
+.iniciarSesion {
     display: inline-block;
     padding: 12px 25px;
     background: linear-gradient(to right, #ff6f61, #ff9a9e);
