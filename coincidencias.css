@@ -124,13 +124,36 @@ header h1 {
 }
 
 footer {
-    background-color: #ff6f61; 
-    color: white;
     width: 100%;
     padding: 20px 0;
+    background: #22201f;
+    color: white;
     text-align: center;
-    margin-top: auto;  
-}
+    margin-top: auto;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .social-icons a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Hace las imágenes redondas */
+    transition: transform 0.3s; /* Agrega un efecto visual al pasar el cursor */
+  }
+  .social-icons a img:hover {
+    transform: scale(1.1); /* Amplía un poco al pasar el cursor */
+  }
+  footer h2 {
+    color: #ffffff; /* Título en blanco */
+    margin-bottom: 10px;
+  }
+  footer p {
+    color: #cccccc; /* Texto del footer en gris claro */
+  }
+  
 
 .text-container ul {
     list-style-position: inside;
