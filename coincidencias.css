@@ -165,8 +165,22 @@ footer {
 
 .like{
     color: rgb(43, 167, 43);
+    animation: pulse 1s infinite;
 }
 
 .reject{
-    color: red
+    color: rgb(104, 0, 0);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(3);
+    }
+    50% {
+        transform: scale(5); 
+    }
+    100% {
+        transform: scale(3);
+    }
 }
