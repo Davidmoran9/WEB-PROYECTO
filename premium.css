@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Reset general */
 * {
     margin: 0;
     padding: 0;
@@ -13,18 +13,32 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    width: 100%; /* Asegura que el body ocupe todo el ancho de la pantalla */
 }
 
+/* Estilos del header */
 header {
     background-color: #ff6f61;
     color: white;
     width: 100%;
     padding: 20px 0;
     text-align: center;
+    position: fixed; /* Para fijar el header en la parte superior */
+    top: 0; /* Para que se quede en la parte superior */
+    left: 0; /* Asegura que se extienda hasta el borde izquierdo */
+    z-index: 10; /* Para que esté encima de otros contenidos */
 }
 
+/* Título en el header */
 header h1 {
     font-size: 40px;
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
 }
 
 nav ul li {
@@ -38,13 +52,65 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Estilos para la tabla */
+/* Contenedor principal */
+.contenedor {
+    margin-top: 100px; /* Espacio debajo del header fijo */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Otros ajustes para el contorno */
+body.normal .contenedor {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+
+/* Estilos cuando el checkbox está activado (modo oscuro) */
+.toggle-mode:checked ~ .contenedor {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+/* Estilos específicos para header en modo oscuro */
+.toggle-mode:checked ~ .contenedor header {
+    background-color: #222;
+    color: #f4f4f9;
+}
+
+/* Estilos específicos para footer en modo oscuro */
+.toggle-mode:checked ~ .contenedor footer {
+    background-color: #222;
+    color: #cccccc;
+}
+
+/* Botón para el modo oscuro */
+.switch {
+    position: fixed;
+    top: 20%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.button-mode {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Tabla */
 table {
     width: 80%;
-    margin: 2em auto;
+    margin: 20px auto;
     border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 th, td {
@@ -53,38 +119,34 @@ th, td {
     border: 1px solid #ddd;
 }
 
-th {
+/* Tabla en modo oscuro */
+.toggle-mode:checked ~ .contenedor table {
+    background-color: #444;
+    color: #f4f4f9;
+}
+
+.toggle-mode:checked ~ .contenedor table th {
+    background-color: #666;
+    color: #f4f4f9;
+}
+
+.toggle-mode:checked ~ .contenedor table td {
+    background-color: #555;
+}
+
+/* Estilos del header */
+header {
     background-color: #ff6f61;
     color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-td {
-    background-color: #f9f9f9;
+header h1 {
+    font-size: 40px;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #f0f0f0;
-}
-
-button {
-    background-color: #ff6f61;
-    color: white;
-    padding: 5px 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-button:hover {
-    background-color: #e15c53;
-}
-
-/* Estilos del pie de página */
+/* Estilos del footer */
 footer {
     width: 100%;
     padding: 20px 0;
@@ -92,31 +154,32 @@ footer {
     color: white;
     text-align: center;
     margin-top: auto;
-}
-
-footer h2 {
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-footer p {
-    color: #cccccc;
-}
-
-.social-icons {
+  }
+  .social-icons {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
-}
-
-.social-icons a img {
+  }
+  .social-icons a img {
     width: 50px;
     height: 50px;
     border-radius: 50%; /* Hace las imágenes redondas */
-    transition: transform 0.3s;
-}
+    transition: transform 0.3s; /* Agrega un efecto visual al pasar el cursor */
+  }
+  .social-icons a img:hover {
+    transform: scale(1.1); /* Amplía un poco al pasar el cursor */
+  }
+  footer h2 {
+    color: #ffffff; /* Título en blanco */
+    margin-bottom: 10px;
+  }
+  footer p {
+    color: #cccccc; /* Texto del footer en gris claro */
+  }
+  
 
-.social-icons a img:hover {
-    transform: scale(1.1);
+/* Ocultar el checkbox */
+.toggle-mode {
+    display: none;
 }
