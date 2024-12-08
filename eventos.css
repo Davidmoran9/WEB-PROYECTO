@@ -82,20 +82,17 @@ nav ul li a {
     padding: 20px;
 }
 .image-container {
-    width: 150px; 
+    width: 100%; 
     height: 150px; 
-    margin: 0 auto 15px; 
-    overflow: hidden; 
-    border-radius: 50%; 
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.profile-image {
+.ubicacion {
     width: 100%;
-    height: 100%;
+    height: 100%; 
     object-fit: cover; 
+    border-radius: 15px; 
 }
 
 .text-container {
@@ -112,6 +109,7 @@ nav ul li a {
 .text-container p {
     font-size: 1rem;
     color: #666;
+    text-align: justify;
 }
 
 .actions {
@@ -165,34 +163,35 @@ footer {
   footer p {
     color: #cccccc; /* Texto del footer en gris claro */
   }
-  
 
-.text-container ul {
-    list-style-position: inside;
-    text-align: justify;
-    margin-left: 20px;
-    font-size: 1rem;
-    color: #666;
+  .preguntas {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: fixed;
+    width: 300px;
+    right: 10px;
+    top: 20px;/*
+    bottom: 0;*/
 }
 
-.like{
-    color: rgb(43, 167, 43);
-    animation: pulse 1s infinite;
+.preguntas h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
-.reject{
-    color: rgb(104, 0, 0);
-    animation: pulse 1s infinite;
+.preguntas ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(3);
-    }
-    50% {
-        transform: scale(10); 
-    }
-    100% {
-        transform: scale(3);
-    }
+.preguntas li {
+    margin-bottom: 10px;
+}
+
+.preguntas li strong {
+    display: block;
+    margin-bottom: 5px;
 }

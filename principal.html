@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatchFinder - Página Principal</title>
     <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
 </head>
 <body>
     <header>
@@ -17,6 +19,7 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="coincidencias.html">Coincidencias</a></li>
                 <li><a href="premium.html">Planes</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="acercaDeNosotros.html">Acerca de Nosotros</a></li>
                 <li><a href="login.html">Cerrar Sesión</a></li>
             </ul>
@@ -29,7 +32,8 @@
                 <h2>Mi Perfil</h2>
             </div>
             <div class="section-body">
-                <img src="https://cdn-icons-png.flaticon.com/512/4645/4645949.png" alt="Perfil" class="profile-image">
+                <i class="fa-regular fa-user usuario fa-7x"></i>
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/4645/4645949.png" alt="Perfil" class="profile-image"> -->
                 <h3>¡Bienvenid@!</h3>
                 <p>Explora tu perfil y personalízalo</p>
                 <br><br><br>
@@ -42,7 +46,8 @@
                 <h2>Chats</h2>
             </div>
             <div class="section-body">
-                <img src="https://cdn.icon-icons.com/icons2/1511/PNG/512/chatcircularblackbutton_104783.png" alt="Perfil" class="chats-image">
+                <i class="fa-regular fa-comments chats fa-7x"></i>
+                <!-- <img src="https://cdn.icon-icons.com/icons2/1511/PNG/512/chatcircularblackbutton_104783.png" alt="Perfil" class="chats-image"> -->
                 <h3>Mensajes Recientes</h3>
                 <p>Mira tus nuevos mensajes y comienza a hacer match</p>
                 <br>
@@ -55,7 +60,8 @@
                 <h2>Blog</h2>
             </div>
             <div class="section-body">
-                <img src="https://www.creativefabrica.com/wp-content/uploads/2022/06/13/Tips-Outline-Icon-Graphics-32281693-1-580x387.jpg" alt="Blog" class="blog-image">
+                <i class="fa-regular fa-lightbulb consejo fa-7x"></i>
+                <!-- <img src="https://www.creativefabrica.com/wp-content/uploads/2022/06/13/Tips-Outline-Icon-Graphics-32281693-1-580x387.jpg" alt="Blog" class="blog-image"> -->
                 <h3>Consejos y Artículos</h3>
                 <p>Lee artículos para mejorar tu experiencia en MatchFinder.</p>
                 <br>
@@ -68,7 +74,8 @@
                 <h2>Coincidencias</h2>
             </div>
             <div class="section-body">
-                <img src="https://img.freepik.com/vector-premium/icono-corazon-redondo-blanco-negro-ilustracion-vector-plano-sombra_608189-574.jpg" alt="Coincidencias" class="coincidencias-image">
+                <i class="fa-solid fa-heart-circle-check coincidencias fa-7x"></i>
+                <!-- <img src="https://img.freepik.com/vector-premium/icono-corazon-redondo-blanco-negro-ilustracion-vector-plano-sombra_608189-574.jpg" alt="Coincidencias" class="coincidencias-image"> -->
                 <h3>Buscar Perfiles</h3>
                 <p>Descubre quién está buscando a alguien como tú.</p>
                 <br>
@@ -76,16 +83,30 @@
             </div>
         </section>
 
-        <section id="eventos" class="eventos-section">
+        <section id="premium" class="premium-section">
             <div class="section-header">
-            <h2>Versión premium</h2>
+            <h2>Premium</h2>
             </div>
             <div class="section-body">
-                <img src="https://png.pngtree.com/element_our/md/20180518/md_5afed730849e5.jpg" alt="Eventos" class="eventos-image">
+                <i class="fa-solid fa-money-bills premium fa-7x"></i>
+                <!-- <img src="https://png.pngtree.com/element_our/md/20180518/md_5afed730849e5.jpg" alt="Eventos" class="eventos-image"> -->
                 <h3>Planes premiun</h3>
                 <p>Únete para tener beneficios interesantes.</p>
                 <br>
                 <a href="premium.html" class="btn">Ver planes</a>
+            </div>
+        </section>
+
+        <section id="eventos" class="eventos-section">
+            <div class="section-header">
+            <h2>Eventos</h2>
+            </div>
+            <div class="section-body">
+                <i class="fa-regular fa-calendar-days eventos fa-7x"></i>
+                <h3>Eventos</h3>
+                <p>Mira los próximos eventos que tenemos.</p>
+                <br>
+                <a href="eventos.html" class="btn">Ver eventos</a>
             </div>
         </section>
     </div>
