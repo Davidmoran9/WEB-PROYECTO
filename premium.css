@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 100%; /* Asegura que el body ocupe todo el ancho de la pantalla */
+    width: 100%;
 }
 
 /* Estilos del header */
@@ -23,10 +23,10 @@ header {
     width: 100%;
     padding: 20px 0;
     text-align: center;
-    position: fixed; /* Para fijar el header en la parte superior */
-    top: 0; /* Para que se quede en la parte superior */
-    left: 0; /* Asegura que se extienda hasta el borde izquierdo */
-    z-index: 10; /* Para que esté encima de otros contenidos */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 /* Título en el header */
@@ -54,55 +54,10 @@ nav ul li a {
 
 /* Contenedor principal */
 .contenedor {
-    margin-top: 100px; /* Espacio debajo del header fijo */
+    margin-top: 100px;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-}
-
-/* Otros ajustes para el contorno */
-body.normal .contenedor {
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-
-/* Estilos cuando el checkbox está activado (modo oscuro) */
-.toggle-mode:checked ~ .contenedor {
-    background-color: #333;
-    color: #f4f4f9;
-}
-
-/* Estilos específicos para header en modo oscuro */
-.toggle-mode:checked ~ .contenedor header {
-    background-color: #222;
-    color: #f4f4f9;
-}
-
-/* Estilos específicos para footer en modo oscuro */
-.toggle-mode:checked ~ .contenedor footer {
-    background-color: #222;
-    color: #cccccc;
-}
-
-/* Botón para el modo oscuro */
-.switch {
-    position: fixed;
-    top: 20%;
-    left: 87%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
-.button-mode {
-    background-color: #ff6f61;
-    color: white;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 /* Tabla */
@@ -119,7 +74,41 @@ th, td {
     border: 1px solid #ddd;
 }
 
-/* Tabla en modo oscuro */
+th {
+    background-color: #af4c61;
+    color: white;
+}
+.btn-adquirir{
+    background-color: #df0e54e0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+tr:nth-child(even) {
+    background-color: #f0bfbf;
+}
+
+/* Modo oscuro para todo el sitio cuando el checkbox está activado */
+.toggle-mode:checked ~ .contenedor {
+    background-color: #333;
+    color: #f4f4f9;
+}
+.toggle-mode:checked ~ .contenedor .btn-adquirir { /* Cambié esto */
+    background-color: #444;
+    color: #f4f4f9;
+}
+.toggle-mode:checked ~ .contenedor header {
+    background-color: #222;
+    color: #f4f4f9;
+}
+
+.toggle-mode:checked ~ .contenedor nav ul li a {
+    color: #f4f4f9;
+}
+
 .toggle-mode:checked ~ .contenedor table {
     background-color: #444;
     color: #f4f4f9;
@@ -134,18 +123,6 @@ th, td {
     background-color: #555;
 }
 
-/* Estilos del header */
-header {
-    background-color: #ff6f61;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 40px;
-}
-
 /* Estilos del footer */
 footer {
     width: 100%;
@@ -154,32 +131,56 @@ footer {
     color: white;
     text-align: center;
     margin-top: auto;
-  }
-  .social-icons {
+}
+
+.social-icons {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
-  }
-  .social-icons a img {
+}
+
+.social-icons a img {
     width: 50px;
     height: 50px;
-    border-radius: 50%; /* Hace las imágenes redondas */
-    transition: transform 0.3s; /* Agrega un efecto visual al pasar el cursor */
-  }
-  .social-icons a img:hover {
-    transform: scale(1.1); /* Amplía un poco al pasar el cursor */
-  }
-  footer h2 {
-    color: #ffffff; /* Título en blanco */
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+footer h2 {
+    color: #ffffff;
     margin-bottom: 10px;
-  }
-  footer p {
-    color: #cccccc; /* Texto del footer en gris claro */
-  }
-  
+}
+
+footer p {
+    color: #cccccc;
+}
 
 /* Ocultar el checkbox */
 .toggle-mode {
     display: none;
+}
+
+/* Botón para el modo oscuro */
+.switch {
+    position: fixed;
+    top: 20%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.button-mode {
+    background-color: #b92517;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
