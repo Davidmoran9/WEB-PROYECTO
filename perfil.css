@@ -16,6 +16,14 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-size: 40px;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 header nav ul {
     display: flex;
     justify-content: center;
@@ -27,6 +35,13 @@ header nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+nav a{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .section1, .section2, .section3, .section4 {
@@ -146,4 +161,8 @@ footer h2 {
 
 footer p {
     color: #cccccc; /* Texto del footer en gris claro */
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }

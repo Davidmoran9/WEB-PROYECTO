@@ -21,6 +21,10 @@ header {
 
 header h1 {
     font-size: 40px;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav ul {
@@ -39,6 +43,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .container {
@@ -74,18 +85,28 @@ nav ul li a {
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+    
 }
 
 .contenidoBlog h2 {
     color: #ff6f61;
     font-size: 25px;
     margin-bottom: 10px;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .contenidoBlog p {
     font-size: 15px;
     color: #666;
     margin-bottom: 20px;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    
 }
 
 .btn {
@@ -103,4 +124,38 @@ nav ul li a {
     background-color: #feb47b;
 }
 
+footer {
+    width: 100%;
+    padding: 20px 0;
+    background: #22201f;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .social-icons a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Hace las imágenes redondas */
+    transition: transform 0.3s; /* Agrega un efecto visual al pasar el cursor */
+  }
+  .social-icons a img:hover {
+    transform: scale(1.1); /* Amplía un poco al pasar el cursor */
+  }
+  footer h2 {
+    color: #ffffff; /* Título en blanco */
+    margin-bottom: 10px;
+  }
+  footer p {
+    color: #cccccc; /* Texto del footer en gris claro */
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 

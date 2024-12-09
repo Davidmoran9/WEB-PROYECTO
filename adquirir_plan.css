@@ -43,6 +43,11 @@ header {
 header h1 {
     font-size: 2rem;
     animation: slideIn 1s ease-out; /* Animación de entrada */
+    font-size: 40px;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Menú de navegación */
@@ -61,6 +66,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /* Estilos del main */

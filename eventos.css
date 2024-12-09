@@ -25,6 +25,10 @@ header {
 
 header h1 {
     font-size: 40px;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav ul li {
@@ -36,6 +40,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .contenedor {
@@ -74,6 +85,13 @@ nav ul li a {
     padding: 15px;
 }
 
+.card-header h2{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .card-title {
     font-size: 1.5rem;
 }
@@ -110,6 +128,10 @@ nav ul li a {
     font-size: 1rem;
     color: #666;
     text-align: justify;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .actions {
@@ -162,6 +184,10 @@ footer {
   }
   footer p {
     color: #cccccc; /* Texto del footer en gris claro */
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
 
   .preguntas {

@@ -24,6 +24,10 @@ header {
 
 header h1 {
     font-size: 40px;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav ul li {
@@ -37,6 +41,13 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav a{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 .contenedor {
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +58,19 @@ nav ul li a {
     margin: 20px auto;
 }
 
+.section-header h2{
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.section-body{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
 
 /* Mi Perfil */
 .perfil-section {
@@ -351,6 +375,10 @@ footer {
   }
   footer p {
     color: #cccccc; /* Texto del footer en gris claro */
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
 
   

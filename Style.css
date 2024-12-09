@@ -25,6 +25,12 @@ header {
 
 header h1 {
   font-size: 2rem;
+    font-size: 40px;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 
