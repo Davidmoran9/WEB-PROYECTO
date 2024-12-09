@@ -112,4 +112,8 @@ footer h2 {
 }
 footer p {
   color: #cccccc; /* Texto del footer en gris claro */
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }

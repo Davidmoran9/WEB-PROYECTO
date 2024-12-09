@@ -55,7 +55,8 @@ nav a{
 
 .section1 {
     height: 400px;
-    background-color: black;
+    background: rgb(24,62,131);
+    background: linear-gradient(90deg, rgba(24,62,131,0.9444152661064426) 24%, rgba(136,64,204,0.9332107843137255) 81%);
     color: white;
     display: flex;
     justify-content: center;
@@ -71,6 +72,7 @@ nav a{
     background-size: cover;
     background-position: center;
     border-radius: 50%; /* Esto hace que la imagen sea redonda */
+    
 }
 
 
@@ -89,7 +91,7 @@ nav a{
 }
 
 .section4 {
-    height: 600px;
+    height: 400px;
     background-color: #f5f5f5;
 }
 
@@ -121,6 +123,13 @@ nav a{
 }
 
 .info-perfil p {
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+}
+
+.info-perfil li {
     margin-bottom: 8px;
     font-size: 1em;
     color: #666;
